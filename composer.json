@@ -1,0 +1,23 @@
+{
+    "name": "midnightluke/group-security-bundle",
+    "description": "Provides interfaces for group functionality and security voters.",
+    "type": "symfony-bundle",
+    "require": {
+        "symfony/symfony": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Bainbridge",
+            "email": "luke.bainbridge@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": { "MidnightLuke\\GroupSecurityBundle\\": "" }
+    }
+}
