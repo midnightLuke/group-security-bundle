@@ -1,6 +1,6 @@
 <?php
 
-namespace MidnightLuke\GroupSecurityBundle\Model\Group;
+namespace MidnightLuke\GroupSecurityBundle\Model;
 
 /**
  * Represents an entity that can be a member of a group.

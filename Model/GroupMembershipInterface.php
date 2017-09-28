@@ -1,6 +1,6 @@
 <?php
 
-namespace MidnightLuke\GroupSecurityBundle\Model\Group;
+namespace MidnightLuke\GroupSecurityBundle\Model;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 
