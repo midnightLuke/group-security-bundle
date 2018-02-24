@@ -6,3 +6,5 @@ services:
     MidnightLuke\GroupSecurityBundle\:
         resource: '../../*'
         exclude: '../../{Model,Tests}'
+    Symfony\Component\Security\Core\Role\RoleHierarchyInterface:
+        alias: security.role_hierarchy
