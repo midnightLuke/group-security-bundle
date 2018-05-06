@@ -8,7 +8,7 @@ use Symfony\Component\Security\Core\Role\RoleHierarchyInterface;
 
 class GroupRoleHierarchyVoter extends GroupRoleVoter
 {
-    private $hierarchy;
+    protected $hierarchy;
 
     public function __construct(RoleHierarchyInterface $hierarchy)
     {
