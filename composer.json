@@ -3,7 +3,7 @@
     "description": "Provides interfaces for group functionality and security voters.",
     "type": "symfony-bundle",
     "require": {
-        "symfony/symfony": "^3.3 || ^4.0"
+        "symfony/security": "^3.3 || ^4.0"
     },
     "license": "MIT",
     "authors": [
