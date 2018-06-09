@@ -6,6 +6,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 interface GroupMembershipInterface
 {
+    const GROUP_ROLE_PREFIX = 'GROUP_ROLE_';
+
     public function getRoles(): array;
     public function addRole(string $role);
     public function removeRole(string $role);
