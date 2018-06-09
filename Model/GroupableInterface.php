@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace MidnightLuke\GroupSecurityBundle\Model;
 
@@ -10,5 +10,5 @@ interface GroupableInterface
     public function getGroups();
     public function addGroup(GroupInterface $group);
     public function removeGroup(GroupInterface $group);
-    public function hasGroup(GroupInterface $group);
+    public function hasGroup(GroupInterface $group): bool;
 }

@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace MidnightLuke\GroupSecurityBundle\Model;
 
@@ -12,5 +12,5 @@ namespace MidnightLuke\GroupSecurityBundle\Model;
  */
 interface GroupInterface
 {
-    public function isEqualTo(GroupInterface $group);
+    public function isEqualTo(GroupInterface $group): bool;
 }
