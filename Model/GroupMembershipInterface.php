@@ -13,8 +13,8 @@ interface GroupMembershipInterface
     public function removeRole(string $role);
     public function hasRole(string $role): bool;
 
-    public function getStatus(): ?bool;
-    public function setStatus(bool $status);
+    public function isActive(): bool;
+    public function setActive(bool $status);
 
     public function getMember(): ?GroupMemberInterface;
     public function setMember(GroupMemberInterface $member);

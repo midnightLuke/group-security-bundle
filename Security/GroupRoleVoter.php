@@ -47,7 +47,7 @@ abstract class GroupRoleVoter extends Voter
         foreach ($user->getMemberships() as $membership) {
             // User has an active membership.
             if ($subject->isEqualTo($membership->getGroup())
-                && $membership->getStatus()
+                && $membership->isActive()
                 && !$membership->isExpired()) {
                 // Check the roles for this membership.
                 foreach ($this->extractRoles($membership) as $role) {
