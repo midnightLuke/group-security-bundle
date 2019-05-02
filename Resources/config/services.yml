@@ -1,10 +1,8 @@
 services:
-    _defaults:
-        autowire: true
-        autoconfigure: true
-        public: false
-    MidnightLuke\GroupSecurityBundle\:
-        resource: '../../*'
-        exclude: '../../{Model,Tests}'
-    Symfony\Component\Security\Core\Role\RoleHierarchyInterface:
-        alias: security.role_hierarchy
+    midnightluke.group_security.group_role_voter:
+        class: MidnightLuke\GroupSecurityBundle\Security\GroupRoleVoter
+        tags: ['security.voter']
+    midnightluke.group_security.group_role_hierarchy_voter:
+        class: MidnightLuke\GroupSecurityBundle\Security\GroupRoleHierarchyVoter
+        tags: ['security.voter']
+        arguments: ['@security.role_hierarchy']
