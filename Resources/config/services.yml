@@ -1,7 +1,4 @@
 services:
-    midnightluke.group_security.group_role_voter:
-        class: MidnightLuke\GroupSecurityBundle\Security\GroupRoleVoter
-        tags: ['security.voter']
     midnightluke.group_security.group_role_hierarchy_voter:
         class: MidnightLuke\GroupSecurityBundle\Security\GroupRoleHierarchyVoter
         tags: ['security.voter']
